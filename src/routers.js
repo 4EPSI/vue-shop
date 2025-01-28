@@ -5,6 +5,7 @@ const routerHistory = createWebHistory()
 
 import Home from './pages/Home.vue'
 import Shop from './pages/Shop.vue'
+import Product from './pages/Product.vue'
 import NoteFoundPage from './pages/404.vue'
 
 const routers = createRouter({
@@ -19,6 +20,11 @@ const routers = createRouter({
       path: '/shop',
       name: 'shop',
       component: Shop
+    },
+    {
+      path: '/shop/:id',
+      name: 'product',
+      component: Product
     },
     {
       path: '/:catchAll(.*)',
