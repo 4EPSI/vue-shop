@@ -4,7 +4,8 @@
       <div class="navbar">
         <div class="container">
           <div class="navbar-content">
-            <div class="logo">VUE-CLI</div>
+            <router-link to="/">VUE-CLI</router-link>
+            <!-- <div class="logo">VUE-CLI</div> -->
             <ul class="navbar-list">
               <li v-for="link in links" :key="link.name" class="navbar-item">
                 <router-link class="navbar-link" :to="link.path">{{ link.name }}</router-link>
