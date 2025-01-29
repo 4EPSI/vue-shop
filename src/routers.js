@@ -24,7 +24,7 @@ const routers = createRouter({
     {
       path: '/shop/:id',
       name: 'product',
-      component: Product
+      component: () => import('@/pages/Product.vue')
     },
     {
       path: '/:catchAll(.*)',

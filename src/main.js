@@ -9,5 +9,4 @@ const app = createApp(App)
 app.use(routers)
 app.use(store)
 
-
 app.mount('#app')
